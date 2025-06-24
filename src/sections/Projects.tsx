@@ -44,15 +44,19 @@ const portfolioProjects = [
 export const ProjectsSection = () => {
   return <div>
     <div className="container">
-      <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center ">Real-World Results</p>
-      <h2>Featured Projects</h2>
-      <p>See how I transformed concepts into engaging digital experiences.</p>
-      <div>
+      <div className="flex justify-center">
+      <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center ">Real-World Results</p></div>
+      <h2 className="font-serif text-3xl text-center mt-6">Featured Projects</h2>
+      <p className="text-center text-white/60 mt-4">See how I transformed concepts into engaging digital experiences.</p>
+      <div className="flex flex-col mt-10">
         {portfolioProjects.map(project=>(
-          <div key={project.title}>
-            <div>
-              <span>{project.company}</span>
-              <span>{project.year}</span>
+          <div key={project.title} className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after;content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20">
+            <div className="flex">
+              <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase trackin-widest text-sm text-transparent bg-clip-text">
+                <span>{project.company}</span>
+                <span>&bull;</span>
+                <span>{project.year}</span>
+              </div>
             </div>
             <h3>{project.title}</h3>
             <hr/>
