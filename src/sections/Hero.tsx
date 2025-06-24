@@ -58,9 +58,8 @@ export const HeroSection = () => {
         <div className="max-w-2xl mx-auto">
           <h1 className="font-serif text-3xl text-center mt-8 tracking-wide md:text-5xl">Building Exceptional Digital Experiences</h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            I am a passionate software engineer with a knack for creating
-            innovative solutions. My expertise lies in web development, and I
-            thrive on turning ideas into reality.
+            I am a passionate Software Engineer with a knack for creating
+            innovative solutions. My expertise lies in web development,Full-Stack Development and I thrive on turning ideas into reality.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">

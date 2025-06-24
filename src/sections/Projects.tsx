@@ -44,9 +44,30 @@ const portfolioProjects = [
 export const ProjectsSection = () => {
   return <div>
     <div className="container">
-      <p>Real-World Results</p>
+      <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center ">Real-World Results</p>
       <h2>Featured Projects</h2>
       <p>See how I transformed concepts into engaging digital experiences.</p>
+      <div>
+        {portfolioProjects.map(project=>(
+          <div key={project.title}>
+            <div>
+              <span>{project.company}</span>
+              <span>{project.year}</span>
+            </div>
+            <h3>{project.title}</h3>
+            <hr/>
+            <ul>
+              {project.results.map((result, idx) => (
+                <li key={idx}>{result.title}</li>
+              ))}
+            </ul>
+            <a href={project.link}>
+              <button>View Live Site</button>
+            </a>
+            <img src={project.image} alt={project.title} />
+          </div>
+        ))}
+      </div>
     </div>
   </div>;
 };
