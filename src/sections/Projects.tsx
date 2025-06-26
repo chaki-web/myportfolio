@@ -71,6 +71,8 @@ export const ProjectsSection = () => {
                 style={{ backgroundImage: `url(${grainImage.src})` }}
               ></div>
 
+              <div className="lg:grid lg:grid-cols-2">
+
               <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                 <span>{project.company}</span>
                 <span>&bull;</span>
@@ -102,6 +104,7 @@ export const ProjectsSection = () => {
                 alt={project.title}
                 className="mt-8 -mb-4 md:mb-0"
               />
+              </div>
             </div>
           ))}
         </div>
