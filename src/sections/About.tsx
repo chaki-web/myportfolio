@@ -13,6 +13,9 @@ import { TechIcon } from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png";
 import smileEmoji from "@/assets/images/memoji-smile.png";
 import bookImage from "@/assets/images/book-cover.png";
+import { CardHeader } from "@/components/CardHeader";
+import { ToolboxItems } from "@/components/ToolboxItems";
+
 
 const toolboxItems = [
   {
@@ -83,43 +86,28 @@ export const AboutSection = () => {
       title="A Glimpse Into My World"
       description="Learn more about who I am,what I do, and my journey so far." />
       <div className="mt-20">
-        <Card>
-          <div className="flex flex-col">
-            <div className="inline-flex items-center gap-2">
-              <StarIcon className="size-9 text-emerald-300" />
-              <h3 className="font-serif text-3xl">My Reads</h3>
-            </div>
-            <p className="text-sm text-white/60 mt-2">Explore the books Shaping my perspectives</p>
-          </div>
+        <Card className="h-[320px]">
+          <CardHeader
+            title="My Reads"
+            description="Explore the books Shaping my perspectives"
+          />
           <div className="w-40 mx-auto mt-8">
             <Image src={bookImage} alt="Book Cover" />
           </div>
+        </Card>.0z
+        <Card className="h-[320px] p-0">
+          <CardHeader
+            title="My Toolbox"
+            description="Explore the tools and technologies I use"
+          />
+          <ToolboxItems items={toolboxItems} />
+          <ToolboxItems items={toolboxItems} />
         </Card>
         <Card>
-          <div>
-            <div className="inline-flex items-center">
-              <StarIcon className="size-9 text-emerald-300" />
-              <h3 className="font-serif text-3xl">My Toolbox</h3>
-            </div>
-            <p className="text-sm text-white/60 mt-2">Explore the books Shaping my perspectives</p>
-          </div>
-          <div>
-            {toolboxItems.map(
-              item => (
-                <div key={item.title}>
-                  <TechIcon component={item.iconType} />
-                  <span>{item.title}</span>
-                </div>
-              )
-            )}
-          </div>
-        </Card>
-        <Card>
-          <div>
-            <StarIcon />
-            <h3>Beyond the Code</h3>
-            <p>Explore my interests and hobbies beyond the digital realm</p>
-          </div>
+          <CardHeader
+            title="Beyond the Code"
+            description="Explore my interests and hobbies beyond the digital realm"
+          />
           <div>
             {hobbies.map((hobby) => (
               <div key={hobby.title}>
