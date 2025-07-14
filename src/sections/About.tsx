@@ -49,30 +49,44 @@ const hobbies = [
   {
     title: 'Music',
     emoji: '🎵',
+    left: '50%',
+    top:'50%',
   },
   {
     title: 'Travelling',
     emoji: '✈️',
+    left: '',
+    top:'',
   },
   {
     title: 'Hiking',
     emoji: '🥾',
+    left: '',
+    top:'',
   },
   {
     title: 'Photography',
     emoji: '📷',
+    left: '',
+    top:'',
   },
   {
     title: 'Writing',
     emoji: '✍️',
+    left: '',
+    top:'',
   },
   {
     title: 'Swimming',
     emoji: ' 🏊',
+    left: '',
+    top:'',
   },
   {
     title: 'Gaming',
     emoji: '🎮',
+    left: '',
+    top:'',
   },
 
 ]
@@ -85,7 +99,7 @@ export const AboutSection = () => {
       eyebrow="About Me"
       title="A Glimpse Into My World"
       description="Learn more about who I am,what I do, and my journey so far." />
-      <div className="mt-20">
+      <div className="mt-20 flex flex-col gap-8">
         <Card className="h-[320px]">
           <CardHeader
             title="My Reads"
@@ -94,14 +108,14 @@ export const AboutSection = () => {
           <div className="w-40 mx-auto mt-8">
             <Image src={bookImage} alt="Book Cover" />
           </div>
-        </Card>.0z
+        </Card>
         <Card className="h-[320px] p-0">
           <CardHeader
             title="My Toolbox"
             description="Explore the tools and technologies I use"
           />
-          <ToolboxItems items={toolboxItems} />
-          <ToolboxItems items={toolboxItems} />
+          <ToolboxItems items={toolboxItems} className="mt-6" />
+          <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="-translate-x-1/2" />
         </Card>
         <Card>
           <CardHeader
@@ -110,8 +124,8 @@ export const AboutSection = () => {
           />
           <div>
             {hobbies.map((hobby) => (
-              <div key={hobby.title}>
-                <span>{hobby.title}</span>
+              <div key={hobby.title} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute">
+                <span className="font-medium text-gray-950">{hobby.title}</span>
                 <span>{hobby.emoji}</span>
               </div>
             ))}
