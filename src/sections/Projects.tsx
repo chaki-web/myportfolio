@@ -13,11 +13,11 @@ const portfolioProjects = [
     year: "2025",
     title: "Do.lk",
     results: [
-      { title: "Exclusively for Sri Lankan Community" },
+      { title: "Tech Stack - Flutter, Dart, Firebase, MySQL, Node.js, PHP" },
       { title: "Better Hands on User Experience" },
       { title: "Payment Gateways Including Crypto" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "https://bit.ly/3Hi2MPo",
     image: darkSaasLandingPage,
   },
   {
@@ -25,11 +25,11 @@ const portfolioProjects = [
     year: "2024",
     title: "ACloth",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Tech Stack - Java, HTML/CSS/Js, Java Servlets, My SQL" },
+      { title: "Product Browsing, Cart Management, and User Transactions" },
+      { title: "Enhanced User Experience" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "https://bit.ly/3S8d8DL",
     image: lightSaasLandingPage,
   },
   {
@@ -37,11 +37,11 @@ const portfolioProjects = [
     year: "2023",
     title: "Luxury Wearstore",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Tech Stack - C#, HTML/CSS/Js, My SQL, ASP.NET" },
+      { title: "Web-Based Auction Platform" },
+      { title: "Simple user interface for seamless navigation" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://bit.ly/3SHj0UJ",
     image: aiStartupLandingPage,
   },
 ];
