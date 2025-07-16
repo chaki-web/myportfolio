@@ -38,5 +38,9 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
-  return <div>Testimonials Section</div>;
+  return <div>
+    <p>Happy Thoughts!</p>
+    <h2>What Collaborators Say About Me</h2>
+    <p>Don’t just take my word for it. Hear directly from the people who’ve trusted me to bring their ideas to life.Dont just take my word for it. See what my clients have to say about my work.</p>
+  </div>;
 };
