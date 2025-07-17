@@ -119,22 +119,28 @@ export const HeroSection = () => {
           <h1 className="font-serif text-3xl text-center mt-8 tracking-wide md:text-5xl">
             Building Exceptional Digital Experiences
           </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg">
-            I am a passionate Software Engineer with a knack for creating
-            innovative solutions. My expertise lies in web
-            development,Full-Stack Development and I thrive on turning ideas
-            into reality.
+          <p className="mt-7 text-center text-white/60 md:text-lg">
+            I’m a passionate Software Engineer specializing in frontend
+            development, UI/UX design, and full-stack solutions. I combine clean
+            code with creative design to build seamless, responsive, and
+            engaging web experiences. Whether it’s crafting intuitive user
+            interfaces or architecting scalable systems, I turn ideas into
+            impactful digital products.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 relative z-10">
+          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition-colors">
             <span className="font-semibold">Explore My Work Here!</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white text-gray-900 bg-white h-12 px-6 rounded-xl">
+          <a
+            href="/image/janethra.pdf"
+            download="janethra.pdf"
+            className="inline-flex items-center gap-2 border border-white text-gray-900 bg-white h-12 px-6 rounded-xl hover:bg-gry-100 transition-colors"
+          >
             <span>👋</span>
-            <span className="font-semibold">Let us Connect</span>
-          </button>
+            <span className="font-semibold">Download my CV</span>
+          </a>
         </div>
       </div>
     </div>

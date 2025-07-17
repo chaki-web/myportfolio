@@ -12,38 +12,38 @@ const testimonials = [
   {
     name: "Alex Turner",
     position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    text: "Janethra was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
     avatar: memojiAvatar1,
   },
   {
     name: "Olivia Green",
     position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    text: "Working with Janethra was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
     avatar: memojiAvatar2,
   },
   {
     name: "Daniel White",
     position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    text: "J's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
     avatar: memojiAvatar3,
   },
   {
     name: "Amaya Kumarasiri",
     position: "Associate UI/UX,QA @ AKH IT Solutions",
-    text: "Janethra is a true frontend wizard. His work on our project was outstanding. He not only delivered a beautiful design but also ensured a seamless user experience. Highly recommended!",
+    text: "Janethra is a brilliant developer with a sharp eye for design and functionality. Working with him was smooth and inspiring. He transformed our vision into a fully functional product with flawless execution. Every detail—from layout to interaction—was thoughtfully crafted. I’m truly impressed by his dedication and skill. Highly recommended for any creative collaboration!",
     avatar: memojiAvatar4,
   },
   {
     name: "Praveen Kakulandala",
     position: "Undergraduate @ NSBM",
-    text: "Hey Janethra 😊, it was such a pleasure working with you! Your support and great ideas made everything smoother and fun. Really hope we get to collaborate again soon! 🤝✨",
+    text: "Hey Janethra, it was such a pleasure working with you! Your support and great ideas made everything smoother and fun. Really hope we get to collaborate again soon! 🤝✨",
     avatar: memojiAvatar5,
   },
 ];
 
 export const TestimonialsSection = () => {
   return (
-    <div className="py-16 lg:py-24">
+    <div className="py-16 lg:py-24" id="testimonials">
       <SectionHeader
         eyebrow="Happy Thoughts!"
         title="What Collaborators Say About Me"
